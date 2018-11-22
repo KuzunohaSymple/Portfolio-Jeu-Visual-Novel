@@ -1,0 +1,252 @@
+.content {
+    width: 800px;
+    margin-left: 2.5%;
+    margin-right: 2%;
+    position: relative;
+    font-size: 24px;
+    margin-top: 0.5%;
+}
+
+.content .internal {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.border{
+    border: 6px double darkslategray;
+    position: relative;
+    bottom: 45px;
+}
+
+.content .internal .internal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.content .internal .internal-background .internal-char {
+    height: 350px;
+    width: 410px;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+.content .textbox {
+    height: 222px;
+    width: 100%;
+    padding: 5px 25px;
+    line-height: 30px;
+    box-sizing: border-box;
+    border: 4px solid #000000;
+    font-family: "Lato","Abyssinica SIL";
+    background-color: #f1f1f1;
+}
+.content .textbox .speaker {
+    font-weight: 700;
+    min-height: 30px;
+}
+
+.answer {
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+}
+
+.answer:hover{
+    background-color: limegreen;
+}
+
+body{
+    background-image: linear-gradient(palevioletred, beige);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.infos{
+    background-image: url("graphism/Backgrounds/Stars2.png");
+    width: 20%;
+    border-radius: 6px;
+}
+
+.link{
+    background-image: linear-gradient(#fc9878,#fabf00);
+    border-radius: 6px;
+    width: 15%;
+}
+
+.picture{
+    background-image: url("graphism/Characters/EmmaDate_NormalBlush.png");
+    width: 50%;
+    height: 81.5%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+li img{
+    width: 50px;
+    position: relative;
+    top: 20px;
+    right: 6%;
+}
+
+.name, .surname {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Lato";
+    color: #841d3c;
+}
+
+.surname{
+    margin-left: 20%;
+}
+
+.age {
+    font-size: 30px;
+    font-family: "Lato";
+    /*margin-top: 2%;*/
+    position: relative;
+    top: 40px;
+    left: 4%;
+    color: #f46293;
+}
+
+li{
+    list-style-type: none;
+    margin-top: 13%;
+    font-size: 18px;
+    color:#5d0f27;
+    font-family: "Comic Sans MS";
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+table{
+    position: relative;
+    bottom: 34px;
+    left: 18%;
+}
+
+.button_cv{
+    background-color: #841d3c;
+    color: ghostwhite;
+    border-radius: 6px;
+    font-size: 26px;
+    padding: 1%;
+    text-decoration: none;
+    box-shadow: 4px 2px 4px dimgrey;
+}
+
+.button_cv:hover{
+    opacity: 0.5;
+    background-color: limegreen;
+}
+
+.webacademie {
+    color:#33a1e6;
+}
+
+.bubble {
+    width: 56%;
+    background-color: ghostwhite;
+    border-radius: 100px;
+    padding: 5%;
+    margin-left: 9%;
+    background-color: white;
+    font-family: 'Comic Sans MS';
+    color:#4a7348;
+    font-weight: bold;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 163px solid transparent;
+    border-right: 56px solid transparent;
+    border-bottom: 55px solid white;
+    position: relative;
+    bottom: 33px;
+    right: 49px;
+    transform: rotate(-23deg);
+    z-index: 1;
+}
+
+#star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    top: 2%;
+    margin-bottom: 38%;
+    left: 14.4%;
+}
+#star-five:before {
+    border-bottom: 80px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+
+}
+
+#star-five:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+    content: '';
+}
+
+.position {
+    text-align: center;
+    margin-top: 2%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px){
+    
+}
+
+
