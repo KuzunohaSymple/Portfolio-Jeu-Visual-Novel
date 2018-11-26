@@ -1,7 +1,7 @@
 .content {
     width: 800px;
-    margin-left: 2.5%;
-    margin-right: 2%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     position: relative;
     font-size: 24px;
     margin-top: 0.5%;
@@ -67,10 +67,7 @@
 
 body{
     background-image: linear-gradient(palevioletred, beige);
-    background-size: 100%;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
     padding: 0;
     margin: 0;
     height: 100vh;
@@ -78,28 +75,29 @@ body{
 
 .infos{
     background-image: url("graphism/Backgrounds/Stars2.png");
-    width: 20%;
     border-radius: 6px;
 }
 
 .link{
     background-image: linear-gradient(#fc9878,#fabf00);
     border-radius: 6px;
-    width: 15%;
 }
 
 .picture{
     background-image: url("graphism/Characters/EmmaDate_NormalBlush.png");
-    width: 50%;
-    height: 81.5%;
+    width: 130%;
+    height: 79.5%;
+    /*height: 100%;*/
     position: absolute;
     background-repeat: no-repeat;
+    right: -9%;
+    /*z-index: 1;*/
 }
 
 li img{
     width: 50px;
     position: relative;
-    top: 20px;
+    /*top: 20px;*/
     right: 6%;
 }
 
@@ -117,7 +115,7 @@ li img{
 .age {
     font-size: 30px;
     font-family: "Lato";
-    /*margin-top: 2%;*/
+    margin-top: 2%;
     position: relative;
     top: 40px;
     left: 4%;
@@ -162,15 +160,14 @@ table{
 }
 
 .bubble {
-    width: 56%;
-    background-color: ghostwhite;
+    width: 67%;
     border-radius: 100px;
-    padding: 5%;
     margin-left: 9%;
     background-color: white;
     font-family: 'Comic Sans MS';
-    color:#4a7348;
+    color: #4a7348;
     font-weight: bold;
+    padding: 4% 3%;
 }
 
 .triangle{
@@ -180,7 +177,7 @@ table{
     border-right: 56px solid transparent;
     border-bottom: 55px solid white;
     position: relative;
-    bottom: 33px;
+    bottom: 25px;
     right: 49px;
     transform: rotate(-23deg);
     z-index: 1;
@@ -245,8 +242,156 @@ table{
     margin-top: 2%;
 }
 
-@media screen and (min-width: 200px) and (max-width: 640px){
-    
+@media screen and (max-width: 1199px){
+    .triangle {
+        border-left: 84px solid transparent;
+        border-right: 59px solid transparent;
+        border-bottom: 45px solid white;
+        bottom: 171px;
+        transform: rotate(165deg);
+        left: 58%;
+        margin-bottom: 8px;
+    }
+
+    .picture {
+        left: 57%;
+        max-width: 41%;
+        height: 220.5%;
+        top: 7%;
+    }
+
+    body{
+        height:100%;
+    }
+
+    li{
+        margin: 2%;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 28%;
+        right: 2%;
+    }
+
+    #star-five{
+        margin: 0%;
+        left: 42%;
+        top: 16%;
+    }
+
+    .age{
+        top: -60px;
+        left: 5%;
+    }
+
+    .bubble{
+        margin-left: 0%;
+    }
+
+    .button_cv{
+        position: relative;
+        bottom: 188px;
+    }
+
+    table{
+        bottom: 55.7px;
+        left: 27%;
+    }
 }
+
+@media screen and (max-width: 1424px) and (min-width: 1200px){
+    .name,.surname{
+        font-size: 42px;
+    }
+
+    .picture{
+        right: -8%;
+        background-size: 282px;
+        top: 24%;
+        height: 76%;
+    }
+
+    #star-five{
+        left: -5.6%;
+        margin-bottom: 50%;
+    }
+
+    .button_cv{
+        font-size: 18px;
+    }
+
+    li img{
+        right: 22%;
+    }
+
+    li{
+        font-size: 10px;
+    }
+
+    .bubble {
+        width: 89%;
+        margin-left: 9%;
+        padding: 5% 6%;
+        font-size: 20px;
+    }
+
+    .triangle {
+        border-left: 164px solid transparent;
+        border-right: 31px solid transparent;
+        border-bottom: 53px solid white;
+        bottom: 21px;
+        right: 80px;
+    }
+}
+
+@media screen and (max-width: 1649px) and (min-width: 1425px){
+    .name,.surname{
+        font-size: 42px;
+    }
+
+    .picture{
+        right: -8%;
+        background-size: 325px;
+        top: 24%;
+        height: 76%;
+    }
+
+    #star-five{
+        left: 5.4%;
+        margin-bottom: 50%;
+    }
+
+    .button_cv{
+        font-size: 22px;
+    }
+
+    li img{
+        right: 22%;
+    }
+
+    li{
+        font-size: 14px;
+    }
+
+    .bubble {
+        width: 89%;
+        margin-left: 9%;
+        padding: 5% 6%;
+        font-size: 20px;
+    }
+
+    .triangle {
+        border-left: 181px solid transparent;
+        border-right: 31px solid transparent;
+        border-bottom: 53px solid white;
+        bottom: 21px;
+        right: 80px;
+    }
+
+}
+
 
 
